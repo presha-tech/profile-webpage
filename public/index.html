@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Presha's Profile Webpage</title>
-  <!-- CSS now loads from / (served by Express from public/) -->
+  <!-- CSS served from public/ -->
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -13,7 +13,6 @@
       <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#hobbies">My Interests</a></li>
-        <li><a href="#media">Media</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -23,7 +22,6 @@
     <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
-      <!-- Profile picture path fixed -->
       <img src="/profile.jpg" alt="Presha's Profile Picture" class="profile-pic">
       <p>
         Hello! My name is Presha. I’m passionate about learning new things, 
@@ -31,6 +29,19 @@
         and <strong>Greek mythology</strong>. I love how history, food, and stories 
         come together to form a rich culture.
       </p>
+
+      <!-- More About Me tab -->
+      <div class="more-about-me">
+        <h3>More About Me</h3>
+        <p>
+          I enjoy traveling, cooking, and reading about ancient myths. 
+          Greek mythology fascinates me, and I love combining my hobbies by 
+          learning about traditional recipes while reading the stories behind them.
+        </p>
+        <a href="https://www.theoi.com/articles/6-amazing-greek-mythology-facts-youll-love-reading/" target="_blank">
+          <img src="/greece.jpg" alt="Greek Mythology" class="greece-img">
+        </a>
+      </div>
     </section>
 
     <!-- Interests Section -->
@@ -41,34 +52,6 @@
         <li>Reading myths about Zeus, Athena, and other gods ⚡</li>
         <li>Learning web development and creative design 💻</li>
       </ul>
-    </section>
-
-    <!-- Media Section -->
-    <section id="media">
-      <h2>My Media</h2>
-
-      <h3>My Current Favorite Song</h3>
-      <!-- Fixed YouTube embed -->
-      <iframe width="350" height="200" 
-        src="https://www.youtube.com/embed/ZAm31HgrNEw" 
-        title="Young Volcanoes - Fall Out Boy" 
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-
-      <h3>Discover Greek Cuisine</h3>
-      <!-- Fixed Greek cuisine video embed -->
-      <iframe width="400" height="250" 
-        src="https://www.youtube.com/embed/rRoppJxCVM4" 
-        title="Greek Cuisine & Culture" 
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-
-      <h3>Learn More About Greek Food</h3>
-      <iframe width="400" height="300" src="https://www.visitgreece.gr/experiences/greek-gastronomy/"></iframe>
     </section>
 
     <!-- Contact Section -->
@@ -94,7 +77,6 @@
     <p>&copy; 2025 Presha's Webpage</p>
   </footer>
 
-  <!-- JS also served from / -->
   <script src="/script.js"></script>
 </body>
 </html>
