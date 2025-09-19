@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Presha's Profile Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Presha's Profile</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">My Interests</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img src="profile.jpg" alt="Presha's Profile Picture" class="profile-pic">
+        <p>
+          Hello! My name is Presha. I’m passionate about learning new things, 
+          and one of my biggest hobbies is exploring <strong>Greek cuisine</strong> 
+          and <strong>Greek mythology</strong>. I love how history, food, and stories 
+          come together to form a rich culture.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="hobbies">
+      <h2>My Interests</h2>
+      <ul>
+        <li>Exploring traditional Greek recipes 🍇</li>
+        <li>Reading myths about Zeus, Athena, and other gods ⚡</li>
+        <li>Learning web development and creative design 💻</li>
+      </ul>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+      <h2>My Media</h2>
+
+      <h3>My Current Favorite Song</h3>
+      <!-- Use EMBED link instead of youtu.be -->
+      <iframe width="350" height="200"
+        src="https://www.youtube.com/embed/ZAm31HgrNEw"
+        title="Fall Out Boy - Young Volcanoes (Official)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
+      <h3>Discover Greek Cuisine</h3>
+      <!-- Fixed EMBED link -->
+      <iframe width="400" height="250"
+        src="https://www.youtube.com/embed/rRoppJxCVM4"
+        title="Greek Cuisine & Culture - Requested Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
+      <h3>Learn More About Greek Food</h3>
+      <iframe width="400" height="300" src="https://www.visitgreece.gr/experiences/greek-gastronomy/"></iframe>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label><input type="checkbox" name="subscribe"> Subscribe to newsletter</label><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Presha's Webpage</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
